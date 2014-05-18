@@ -1,0 +1,26 @@
+{
+	"passfail" : false,
+	"maxerr" : 20,
+
+	"browser" : true,
+	"jquery" : true,
+	"predef" : [],
+
+	"debug" : false,
+	"devel" : true,
+
+	"eqeqeq" : true,
+	"curly" : true,
+	"asi" : true,
+	"boss" : false,
+	"immed" : true,
+	"supernew" : false,
+	"undef" : true,
+
+	"newcap" : true,
+	"trailing" : true,
+	"white" : false,
+	"indent" : 2,
+
+	"predef" : ["module", "require"]
+}
