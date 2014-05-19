@@ -1,3 +1,9 @@
-h2#title Welcome to Ember.js
+div#header.row role="banner"
+	img.col-xs-4 src="assets/xbox-logo.jpg" alt="Xbox logo"
+	h1.header-text.col-xs-8
+		|X-vote</br>
+		small The Future of X-Box....</br>
+		small err yea...</br>
+		small X-Box Games!</br>
 
-outlet
+outlet	

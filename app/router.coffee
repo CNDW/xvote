@@ -1,4 +1,8 @@
-App.Router = Ember.Router.extend()
+Xvote.Router = Ember.Router.extend()
 
-App.Router.map ->
-  this.route('application')
+Xvote.Router.map ->
+	@route 'games', path: '/'
+	@resource 'games', path: '/games', ->
+		@route 'index'
+		@route 'owned'
+		@route 'unowned'

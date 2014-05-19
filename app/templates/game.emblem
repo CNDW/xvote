@@ -1,0 +1,4 @@
+gotit-button model=game action='ownGame' buttonStatus=isOwned
+h2 = title
+unless isOwned
+	votes-badge model=game action='vote' actionable=hasAvailableAction

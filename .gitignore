@@ -7,3 +7,4 @@ src/_lib
 src/js
 dist
 styles/vendor
+server.js

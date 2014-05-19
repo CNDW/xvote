@@ -1,4 +1,4 @@
-window.App = Ember.Application.create(
+Xvote = Ember.Application.create(
   LOG_ACTIVE_GENERATION: true
   LOG_MODULE_RESOLVER: true
   LOG_TRANSITIONS: true
@@ -7,7 +7,9 @@ window.App = Ember.Application.create(
   )
 
 Ember.RSVP.configure('onerror', (error)->
-  if (error instanceof Error)
-    Ember.Logger.assert(false, error)
-    Ember.Logger.error(error.stack)
+	console.log(e.message)
+	console.log(e.stack)
+	if (error instanceof Error)
+		Ember.Logger.assert(false, error)
+		Ember.Logger.error(error.stack)
 )

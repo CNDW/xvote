@@ -1,0 +1,17 @@
+div#content.main.col-xs-12 role='main'
+	if hasAvailableAction
+		div.row.fluid
+			= input type='text' id='new-game' placeholder="Don't see a game? Add it!" value=newGame action='addGame' classNames='col-xs-12'
+	outlet
+	div.row.fluid#filters
+		div.col-xs-12.panel.panel-success
+			div.panel-heading
+				|Gotta have it/Make it stop
+			div.panel-body
+				ul.filters
+					li = link-to 'games.index'
+						|All
+					li = link-to 'games.owned'
+						|Owned
+					li = link-to 'games.unowned'
+						|Unowned

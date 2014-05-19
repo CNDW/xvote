@@ -1,9 +1,61 @@
 /* Put your CSS here */
 @import "vendor/bootstrap";
+
+font-family
 html, body {
     margin: 20px;
 }
-
-@keyframes domChanged { from { background: yellow; } }
-@-webkit-keyframes domChanged { from { background: yellow; } }
+#header {
+	border-color: green;
+	border-width: 0 0 10px 0;
+	border-style: solid;
+}
+.header-text {
+	text-align: center;
+}
+.game-view {
+	min-height: 100px;
+	h2 {
+		display: inline-block;
+	}
+	.btn {
+		margin-right: 20px;
+	}
+}
+#new-game {
+	height: 50px;
+}
+.badge {
+	font-size: 2em;
+	&.active {
+		cursor: pointer;
+		background-color: green;
+	}
+}
+#filters {
+	.panel {
+		height: 100px;
+		text-align: justify;
+		.panel-heading {
+			margin-left: -15px;
+			margin-right: -15px;
+		}
+	}
+}
+.filters {
+	list-style: none;
+	li {
+		display: inline;
+		a {
+			color: #3c763d;
+			text-decoration: none;
+			margin: 3px;
+			&.active {
+				font-weight: bold;
+			}
+		}
+	}
+}
+@keyframes domChanged { from { background: green; } }
+@-webkit-keyframes domChanged { from { background: green; } }
 .ember-view { animation: domChanged 1s; -webkit-animation: domChanged 1s; }
