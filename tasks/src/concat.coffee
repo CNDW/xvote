@@ -6,6 +6,7 @@ module.exports =
 		dest: '<%= config.dist %>/assets/lib-min.js'
 		src: [
 			'<%=config.minJs %>/jquery.min.js'
+			'<%=config.minJs %>/jquery-cookie.min.js'
 			'<%=config.minJs %>/handlebars.min.js'
 			'<%=config.minJs %>/ember.min.js'
 			'<%=config.minJs %>/ember-data.min.js'

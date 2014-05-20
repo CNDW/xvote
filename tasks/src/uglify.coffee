@@ -3,6 +3,6 @@ module.exports =
     banner: '/*! <%= pkg.name %> lib - v<%= pkg.version %> -' + '<%= grunt.template.today("yyyy-mm-dd") %> */'
   dist: 
     files:
-      '<%= config.dist %>/assets/lib.min.js': [
-        '<%= config.srcJs %>/*.js'
+      '<%= config.minJs %>/jquery-cookie.min.js': [
+        '<%= config.srcJs %>/jquery-cookie.js'
       ]

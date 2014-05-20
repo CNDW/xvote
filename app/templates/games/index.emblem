@@ -1,4 +1,4 @@
-ul.game-list.list-group	
+ul.game-list.list-group
 	each game in arrangedUnowned
 		render 'game' game
 	each game in arrangedOwned

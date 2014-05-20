@@ -25,7 +25,7 @@ module.exports = (grunt) ->
     jshint: taskConfig('jshint')
     concat: taskConfig('concat')
     copy: taskConfig('copy')
-    emblem: taskConfig('emblem')
+    emblem: taskConfig('emblem') 
     uglify: taskConfig('uglify')
     jasmine: taskConfig('jasmine')
     watch: taskConfig('watch')
