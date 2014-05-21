@@ -8,7 +8,7 @@ Xvote.GamesController = Em.ArrayController.extend
 		cookie = $.cookie 'Xvote-HasAction'
 		return yes if cookie is undefined
 		return no if cookie is 'no'
-		).property()
+		).property('hasAvailableAction')
 	useAction: ->
 		#create a cookie that will expire at midnight of that day that marks that the user has either voted or added a game.
 		Xvote.ActionCookie.create()

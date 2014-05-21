@@ -1,7 +1,9 @@
 Xvote.GamesRoute = Em.Route.extend
 	model: -> 
 		#fetches the data from the store with a promise object that will handle a retrieval error with a message and allow the app to continue
+		self = this
 		@store.find('game').then (value)->
+			self.transitionTo('games.index')
 			return value
 		, (rejection)->
 			alert('Connection error: unable to communicate with server.')
